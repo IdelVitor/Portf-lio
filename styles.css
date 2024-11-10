@@ -1,0 +1,150 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4f4f4f;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 30px;
+    background-color: #e0e0e0;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.header h1 {
+    margin: 10px 0;
+}
+
+/* Seção Portfólio */
+.portfolio {
+    padding: 20px;
+    text-align: center;
+    background-color: #d1d1d1;
+}
+
+.portfolio-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+}
+
+.slide {
+    width: 150px;
+    margin: 0 10px;
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Seção Skills */
+.skills {
+    padding: 20px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    height: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4f4f4f;
+}
+
+.progress-bar.html {
+    width: 80%;
+}
+
+.progress-bar.css {
+    width: 60%;
+}
+
+.progress-bar.js {
+    width: 70%;
+}
+
+/* Seção Contato */
+.contact {
+    padding: 20px;
+    background-color: #d1d1d1;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-item {
+    width: 200px;
+    height: 150px;
+    background-color: #ccc;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4f4f4f;
+    color: #fff;
+}
