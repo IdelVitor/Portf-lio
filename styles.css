@@ -13,7 +13,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #4f4f4f;
+    background-color: #333;
     padding: 15px;
     text-align: center;
 }
@@ -22,30 +22,43 @@ body {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffd700;
 }
 
 /* Header */
 .header {
     text-align: center;
-    padding: 30px;
-    background-color: #e0e0e0;
+    padding: 40px;
+    background-color: #e6e6e6;
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: #ccc;
     border-radius: 50%;
     margin: 0 auto;
+    background-image: url('./img/profile-pic.png');
+    background-size: cover;
 }
 
 .header h1 {
     margin: 10px 0;
+    font-size: 2rem;
+}
+
+.header p {
+    color: #555;
+    font-style: italic;
 }
 
 /* Seção Portfólio */
 .portfolio {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     background-color: #d1d1d1;
 }
@@ -54,74 +67,94 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .slides {
     display: flex;
     overflow: hidden;
-    width: 80%;
+    width: 70%;
+    gap: 15px;
 }
 
 .slide {
-    width: 150px;
+    width: 200px;
     margin: 0 10px;
-    background-color: #ccc;
+    background-color: #fff;
     text-align: center;
     padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 
 .slide img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
+}
+
+.slide p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
 }
 
 .slide-btn {
-    background-color: transparent;
+    background-color: #333;
+    color: #fff;
     border: none;
     font-size: 20px;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.slide-btn:hover {
+    background-color: #ffd700;
 }
 
 /* Seção Skills */
 .skills {
-    padding: 20px;
-    background-color: #e0e0e0;
+    padding: 40px;
+    background-color: #e6e6e6;
     text-align: center;
 }
 
 .skill {
-    margin-bottom: 10px;
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
 }
 
-.progress {
+.skill-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     background-color: #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 0 auto;
-    height: 20px;
+    position: relative;
 }
 
-.progress-bar {
-    height: 100%;
-    background-color: #4f4f4f;
-}
-
-.progress-bar.html {
-    width: 80%;
-}
-
-.progress-bar.css {
+.skill-circle img {
     width: 60%;
+    height: 60%;
+    border-radius: 50%;
 }
 
-.progress-bar.js {
-    width: 70%;
+.skill-circle p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
 }
+
 
 /* Seção Contato */
 .contact {
-    padding: 20px;
+    padding: 40px;
     background-color: #d1d1d1;
     text-align: center;
 }
@@ -129,22 +162,72 @@ body {
 .contact-container {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 .contact-item {
-    width: 200px;
-    height: 150px;
-    background-color: #ccc;
-    margin: 10px;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.contact-item.map {
+    height: 250px;
+    background: url('./img/map-placeholder.png') center/cover no-repeat;
+    border-radius: 8px;
+}
+
+.contact-item.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input,
+.form button {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus,
+.form button:hover {
+    border-color: #333;
+    outline: none;
+}
+
+.form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form button:hover {
+    background-color: #555;
+}
+
+.contact-item.map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #4f4f4f;
+    background-color: #333;
     color: #fff;
+    font-size: 0.9rem;
 }
