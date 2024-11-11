@@ -231,3 +231,46 @@ footer {
     color: #fff;
     font-size: 0.9rem;
 }
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden; /* Garante que a imagem fique no formato circular */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha todo o círculo */
+}
+
+.portfolio-slider {
+    position: relative;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10; /* Garante que fique sobre os slides */
+}
+
+.prev-btn {
+    left: 10px; /* Posição à esquerda do carrossel */
+}
+
+.next-btn {
+    right: 10px; /* Posição à direita do carrossel */
+}
