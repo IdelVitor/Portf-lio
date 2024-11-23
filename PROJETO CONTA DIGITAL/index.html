@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankSE - Gestão Financeira</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Bank<span>SE</span></h1>
+        </div>
+        <div class="user-profile">
+            <p>Olá, Fulano</p>
+            <div class="profile-icon"></div>
+        </div>
+    </header>
+    <main>
+        <section class="dashboard">
+            <div class="account-info">
+                <h2>Conta</h2>
+                <p class="balance">R$ <span id="balance">0,00</span></p>
+            </div>
+            <div class="summary">
+                <div class="entry">
+                    <h3>Entradas</h3>
+                    <p class="amount green">R$ <span id="total-entries">0,00</span></p>
+                </div>
+                <div class="exit">
+                    <h3>Saídas</h3>
+                    <p class="amount red">R$ <span id="total-expenses">0,00</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="advertisement">
+            <img src="./assets/img_seguros.png" alt="Seguros para família" id="img_seguros">
+        </section>
+        <section class="actions">
+            <button id="pix-area">Área PIX</button>
+            <button id="pay">Pagar</button>
+            <button id="invest">Investir</button>
+        </section>
+        <section class="transactions">
+            <h3>Últimas transações</h3>
+            <ul id="transaction-list">
+                <li>Não constam transações</li>
+            </ul>
+        </section>
+        <section id="pix-forms" class="hidden">
+            <nav>
+                <button id="receive-tab">Receber</button>
+                <button id="transfer-tab">Transferir</button>
+            </nav>
+            <form id="receive-form" class="hidden">
+                <h3>Receber</h3>
+                <label for="cpf-cnpj">CNPJ/CPF:</label>
+                <input type="text" id="cpf-cnpj">
+                <label for="amount-receive">Valor:</label>
+                <input type="number" id="amount-receive" step="0.01">
+                <button type="submit">Enviar</button>
+                <p id="error-message-receive" class="error hidden">Todos os campos devem ser preenchidos!</p>
+            </form>
+            <form id="transfer-form" class="hidden">
+                <h3>Transferir</h3>
+                <label for="pix-key">Chave PIX:</label>
+                <input type="text" id="pix-key">
+                <label for="amount-transfer">Valor:</label>
+                <input type="number" id="amount-transfer" step="0.01">
+                <button type="submit">Enviar</button>
+                <p id="error-message-transfer" class="error hidden">Todos os campos devem ser preenchidos!</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p id="Receba">© 2024 BankSE - Desenvolvido por: Idel Vitor Machado Macedo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
